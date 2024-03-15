@@ -1,0 +1,26 @@
+<!-- 네비게이션 -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    {% load static %}
+    <img src="{% static "./images/logo.png" %}" alt="Bootstrap" width="60" height="30">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item text-end">
+          <a class="nav-link active end-0" aria-current="page" href="{% url "Home" %}">Home</a>
+        </li>
+        <li class="nav-item text-end">
+          <a class="nav-link" href="{% url "Community" %}">Community</a>
+        </li>
+        <li class="nav-item text-end">
+          <button type="button" class="btn btn-dark px-0" data-bs-toggle="modal" data-bs-target="#login">
+            Login
+          </button>
+        </li>
+         
+      </ul>
+    </div>
+  </div>
+</nav>
